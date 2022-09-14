@@ -10,7 +10,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 " Define the command
-command! MarkdownToHtml lua require('md-to-html').convert_to_html()
+command! MarkdownToHtml lua require'md-to-html'.md_to_html()
 
 " Restore user options
 let &cpo = s:save_cpo
