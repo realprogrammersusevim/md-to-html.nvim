@@ -17,11 +17,13 @@ Install this plugin like you would any other plugin. Here are examples for the t
 
 Vim-Plug:
 
-`Plug "realprogrammersusevim/md-to-html.nvim"`
+```vim
+Plug "realprogrammersusevim/md-to-html.nvim"
+```
 
 Packer:
 
-lua```
+```lua
 use {
     "realprogrammersusevim/md-to-html.nvim"
     cmd = MarkdownToHtml
