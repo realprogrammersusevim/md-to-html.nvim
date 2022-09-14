@@ -34,6 +34,13 @@ use {
 
 Currently this plugin only has one command `:MarkdownToHtml` which creates a new file with the same name but converted to HTML instead of Markdown. As of yet, there are no configuration options.
 
+## TODO
+
+- [ ] Clean up unneeded Lua convertor code
+- [ ] Add command options such as converting in place
+- [ ] Add configuration options to change default behaviour
+- [ ] Write some great documentation so users can learn about my plugin with `:help`
+
 ## Credits
 
-[Markdown.pl](https://daringfireball.net/projects/markdown/)
+[CREDITS.md](https://github.com/realprogrammersusevim/md-to-html.nvim/blob/main/CREDITS.md)
