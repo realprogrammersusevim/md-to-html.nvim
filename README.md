@@ -13,7 +13,7 @@ NeoVim >= 0.5
 
 ## Installation
 
-Install this plugin like you would any other plugin. Here are examples for the two most common plugin managers.
+Remember how I said that it was pure Lua? I wasn't kidding you. There are absolutely no dependencies like pandoc to download and set up. That means you can install this plugin like you would any other plugin. Here are examples for the two most common plugin managers.
 
 Vim-Plug:
 
