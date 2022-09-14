@@ -1,21 +1,37 @@
-# Markdown to HTML | WARNING: IN BETA
+# Markdown to HTML
 
-TODO: Add some awesome badges.
-
-TODO: Describe the project in one sentence.
+![GitHub Repo stars](https://img.shields.io/github/stars/realprogrammersusevim/md-to-html.nvim?style=for-the-badge)
+[![GitHub license](https://img.shields.io/github/license/realprogrammersusevim/md-to-html.nvim?style=for-the-badge)](https://github.com/realprogrammersusevim/md-to-html.nvim/blob/main/LICENSE)
 
 ## Description
 
-TODO: Write a great description to describe what this plugin does.
+This is a very small and lightweight NeoVim plugin to convert a Markdown document into simple HTML.
+
+## Requirements
+
+This plugin relies on a Perl script to do the actual translation. To run this script you need Perl 5.8 or newer.
 
 ## Installation
 
-TODO: Step by step instructions of how to get this code installed and running.
+Install this plugin like you would any other plugin. Here are examples for the two most common plugin managers.
+
+Vim-Plug:
+
+`Plug "realprogrammersusevim/md-to-html.nvim"`
+
+Packer:
+
+lua```
+use {
+    "realprogrammersusevim/md-to-html.nvim"
+    cmd = MarkdownToHtml
+  }
+```
 
 ## Usage
 
-TODO: Explain how to use the plugin.
+Currently this plugin only has one command `:MarkdownToHtml`. As of yet, there are no configuration options.
 
 ## Credits
 
-TODO: Give credit where credit is due.
+[Markdown.pl](https://daringfireball.net/projects/markdown/)
