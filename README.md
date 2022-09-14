@@ -9,7 +9,7 @@ This is a very small and lightweight NeoVim plugin to convert a Markdown documen
 
 ## Requirements
 
-This plugin relies on a Perl script to do the actual translation. To run this script you need Perl 5.8 or newer.
+This plugin relies on a Perl script to do the actual translation. To run this script you need Perl 5.6.0 or newer.
 
 ## Installation
 
