@@ -5,7 +5,7 @@
 
 ## Description
 
-This is a very small and lightweight NeoVim plugin to convert a Markdown document into simple HTML.
+This is a very small and lightweight NeoVim plugin to convert a Markdown document into simple HTML. It is still in beta, so expect large changes in the near future. However, it is completely working and has no bugs to my knowledge.
 
 ## Requirements
 
@@ -40,6 +40,7 @@ Currently this plugin only has one command `:MarkdownToHtml` which creates a new
 - [ ] Add command options such as converting in place
 - [ ] Add configuration options to change default behaviour
 - [ ] Write some great documentation so users can learn about my plugin with `:help`
+- [ ] Write some tests (because apparently those are important)
 
 ## Credits
 
