@@ -5,11 +5,11 @@
 
 ## Description
 
-This is a very small and lightweight NeoVim plugin to convert a Markdown document into simple HTML. It is still in beta, so expect large changes in the near future. However, it is completely working and has no bugs to my knowledge.
+This is a very small and lightweight NeoVim plugin to convert a Markdown document into simple HTML. This is not meant to be used as a Markdown previewer (I would suggest [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) for that) but  as a way to export Markdown into text with HTML tags. It is still in beta, so expect large changes in the near future. However, it is completely working and reliable enough to be used as a daily driver.
 
 ## Requirements
 
-This plugin is coded in 100% pure Lua. As such, there are absolutely no dependencies. Of course, your NeoVim does need to have support for Lua which I think has been built in since 0.2 and has complete support since 0.5.
+NeoVim >= 0.5
 
 ## Installation
 
@@ -39,6 +39,8 @@ Currently this plugin only has one command `:MarkdownToHtml` which creates a new
 - [ ] Clean up unneeded Lua convertor code
 - [ ] Add command options such as converting in place
 - [ ] Add configuration options to change default behaviour
+  - [ ] Convert file inplace rather than creating a new one
+  - [ ] Open file in browser once converted
 - [ ] Write some great documentation so users can learn about my plugin with `:help`
 - [ ] Write some tests (because apparently those are important)
 
