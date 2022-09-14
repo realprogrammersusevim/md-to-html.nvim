@@ -2,36 +2,37 @@ local api = vim.api
 local fn = vim.fn
 local markdown = require('markdown')
 
--- Credit to https://www.reddit.com/r/neovim/comments/tk1hby/get_the_path_to_the_current_lua_script_in_neovim/
-local function is_win()
-  return package.config:sub(1, 1) == '\\'
-end
-
-local function get_path_separator()
-  if is_win() then
-    return '\\'
-  end
-  return '/'
-end
-
-local function script_path()
-  local str = debug.getinfo(2, 'S').source:sub(2)
-  if is_win() then
-    str = str:gsub('/', '\\')
-  end
-  return str:match('(.*' .. get_path_separator() .. ')')
+-- Loggin function
+local log = function(message)
+  api.nvim_echo({ { message } }, true, {})
 end
 
 -- Convert the file to html using Markdown.pl
 local function convert_to_html()
-  -- Location of this script
-  local script_dir = script_path()
-  local filename = api.nvim_buf_get_name(0)
-  local html_filename = fn.fnamemodify(filename, ':r') .. '.html'
+  local file_name = api.nvim_buf_get_name(0)
+  log('Converting ' .. file_name .. ' to html')
+  local file_name_without_extension = fn.fnamemodify(file_name, ':r')
 
-  -- Run markdown.lua for the actual conversion
-  local html = markdown.parse(vim.fn.readfile(filename))
-  vim.fn.writefile(html, html_filename)
+  -- Get the markdown content
+  local markdown_content = io.open(file_name, 'r'):read("*a")
+
+  -- HTML file name
+  local html_file_name = file_name_without_extension .. '.html'
+
+
+  -- Write the markdown content to an html file
+  local html_file = io.open(html_file_name, 'w')
+
+  -- Check nil
+  if html_file == nil then
+    log('Error: Could not open file ' .. html_file_name)
+    return
+  end
+
+  html_file:write(markdown(markdown_content))
+  html_file:close()
+
+  markdown(html_file_name)
 end
 
 local function md_to_html()
