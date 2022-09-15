@@ -15,13 +15,15 @@ NeoVim >= 0.5
 
 Remember how I said that it was pure Lua? I wasn't kidding you. There are absolutely no dependencies like pandoc to download and set up. That means you can install this plugin like you would any other plugin. Here are examples for the two most common plugin managers.
 
-Vim-Plug:
+**Vim-Plug:**
 
 ```vim
 Plug 'realprogrammersusevim/md-to-html.nvim', { 'on': 'MarkdownToHtml' }
 ```
 
-Packer:
+And then run `PlugInstall`
+
+**Packer:**
 
 ```lua
 use {
@@ -30,19 +32,11 @@ use {
   }
 ```
 
+After adding that to your config run `PackerInstall`
+
 ## Usage
 
 Currently this plugin only has one command `:MarkdownToHtml` which creates a new file with the same name but converted to HTML instead of Markdown. As of yet, there are no configuration options.
-
-## TODO
-
-- [X] Clean up unneeded Lua convertor code
-- [ ] Add command options such as converting in place
-- [ ] Add configuration options to change default behaviour
-  - [ ] Convert file inplace rather than creating a new one
-  - [ ] Open file in browser once converted
-- [ ] Write some great documentation so users can learn about my plugin with `:help`
-- [ ] Write some tests (because apparently those are important)
 
 ## Credits
 
