@@ -36,7 +36,7 @@ Currently this plugin only has one command `:MarkdownToHtml` which creates a new
 
 ## TODO
 
-- [ ] Clean up unneeded Lua convertor code
+- [X] Clean up unneeded Lua convertor code
 - [ ] Add command options such as converting in place
 - [ ] Add configuration options to change default behaviour
   - [ ] Convert file inplace rather than creating a new one
