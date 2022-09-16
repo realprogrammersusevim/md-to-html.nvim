@@ -36,10 +36,16 @@ local function md_to_html()
 
   local html_content = markdown(io.open(file_name, 'r'):read("*a"))
 
-  local fixed_html_content = html_content:gsub("[\n\r]", "")
+  -- Wipe the current buffer
+  api.nvim_buf_set_lines(0, 0, -1, false, {})
 
-  -- Wipe current buffer
-  api.nvim_buf_set_lines(0, 0, -1, false, {fixed_html_content})
+  -- Repeat over each line of the html content and write it to the buffer line by line
+  for line in html_content:gmatch("[^\r\n]+") do
+    api.nvim_buf_set_lines(0, -1, -1, false, { line })
+  end
+
+  -- Remove the first line
+  api.nvim_buf_set_lines(0, 0, 1, false, {})
 end
 
 return {
