@@ -1,7 +1,7 @@
 ## TODO
 
 - [X] Clean up unneeded Lua converter code
-- [ ] Add command options such as converting in place
+- [X] Add command options such as converting in place
 - [ ] Add configuration options to change default behaviour
   - [ ] Convert file in place rather than creating a new one
   - [ ] Open file in browser once converted
