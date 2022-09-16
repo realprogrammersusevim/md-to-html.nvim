@@ -39,8 +39,7 @@ local function md_to_html()
   local fixed_html_content = html_content:gsub("[\n\r]", "")
 
   -- Wipe current buffer
-  api.nvim_buf_set_lines(0, 0, -1, false, {})
-  vim.cmd('call append(0, "' .. fixed_html_content .. '")')
+  api.nvim_buf_set_lines(0, 0, -1, false, {fixed_html_content})
 end
 
 return {
