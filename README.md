@@ -36,7 +36,7 @@ After adding that to your config run `PackerInstall`
 
 ## Usage
 
-Currently this plugin only has one command `:MarkdownToHtml` which creates a new file with the same name but converted to HTML instead of Markdown. As of yet, there are no configuration options.
+Currently this plugin only has two commands. `:MarkdownToHtml` converts the current buffer in place and `:NewMarkdownToHtml` which creates a new file with the same name but converted to HTML instead of Markdown. As of yet, there are no configuration options.
 
 ## Credits
 
