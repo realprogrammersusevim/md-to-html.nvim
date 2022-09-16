@@ -9,7 +9,10 @@ if exists('g:loaded_md_to_html') | finish | endif
 let s:save_cpo = &cpo
 set cpo&vim
 
-" Define the command
+" Define the command to convert markdown to html in a new file
+command! NewMarkdownToHtml lua require'md-to-html'.new_md_to_html()
+
+" Define the command to convert markdown to html in the current file
 command! MarkdownToHtml lua require'md-to-html'.md_to_html()
 
 " Restore user options
