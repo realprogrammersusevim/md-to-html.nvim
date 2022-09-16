@@ -27,7 +27,7 @@ And then run `PlugInstall`
 
 ```lua
 use {
-    "realprogrammersusevim/md-to-html.nvim"
+    "realprogrammersusevim/md-to-html.nvim",
     cmd = MarkdownToHtml
   }
 ```
