@@ -9,4 +9,6 @@ But the biggest thanks goes to [Peter Melnichenko](https://github.com/mpeterv) a
 
 Lua also apparently has a very simple regex engine which makes the conversion from Perl's advanced and flexible regex difficult. Again, I cannot thank these two developers enough.
 
-Finally, I would like to thank Steve Losh's _Learning Vimscript the Hard Way_ for convincing me to use Lua. Which after I found the Lua port of the Perl script turned out to be a great decision.
+I would like to thank Steve Losh's _Learning Vimscript the Hard Way_ for convincing me to use Lua. Which after I found the Lua port of the Perl script turned out to be a great decision.
+
+[thanksforthecode.com](https://thanksforthecode.com)
