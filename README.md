@@ -5,7 +5,7 @@
 
 ## Description
 
-This is a very small and lightweight NeoVim plugin to convert a Markdown document into simple HTML. <!--This is not meant to be used as a Markdown previewer (I would suggest [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) for that) but  as a way to export Markdown into text with HTML tags. -->It supports the basic Markdown outlined by John Gruber.
+This is a very small and lightweight NeoVim plugin to convert a Markdown document into simple HTML. <!--This is not meant to be used as a Markdown previewer (I would suggest [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) for that) but as a way to export Markdown into text with HTML tags. -->It supports the basic Markdown outlined by John Gruber.
 
 
 https://user-images.githubusercontent.com/93488695/190666214-3f16a123-5bb5-4103-9130-428b25f3eade.mov
@@ -40,7 +40,7 @@ After adding that to your config run `PackerInstall`
 
 ## Usage
 
-Currently this plugin only has two commands. `:MarkdownToHtml` converts the current buffer in place and `:NewMarkdownToHtml` which creates a new file with the same name but converted to HTML instead of Markdown. As of yet, there are no configuration options.
+Currently this plugin only has two commands. `:MarkdownToHTML` converts the current buffer in place and `:NewMarkdownToHTML` which creates a new file with the same name but converted to HTML instead of Markdown. As of yet, there are no configuration options.
 
 ## Credits
 
