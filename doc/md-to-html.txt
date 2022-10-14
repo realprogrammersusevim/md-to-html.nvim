@@ -22,25 +22,61 @@ CONTENTS                                       *md-to-html-contents*
    8. Author..........................|md-to-html-auth|
 
 ------------------------------------------------------------------------------
-Section 1. Introduction                                     *md-to-html-intro*
+Section 1. Introduction                                   *md-to-html-intro*
+
+Have you ever wanted to quickly write something in Markdown and conver it into
+HTML? This is a simple plugin that does just that. Instead of using a large
+tool like Pandoc or showdown.js, this small script is written in pure Lua and
+quickly converts the Markdown described by John Gruber into HTML.
 
 ------------------------------------------------------------------------------
-Section 2. Usage                                            *md-to-html-usage*
+Section 2. Usage                                          *md-to-html-usage*
+
+This plugin currently has two commands:
+
+`:MarkdownToHtml` will convert the current buffer into HTML.
+
+`:NewMarkdownToHtml` will create a new file with the same name as the current
+buffer and write the HTML to it.
 
 ------------------------------------------------------------------------------
-Section 3. Options                                           *md-to-html-opts*
+Section 3. Options                                         *md-to-html-opts*
+
+There are no options for this plugin yet. If you have any suggestions or would
+like to see something added, please open an issue--or even better a pull
+request--on the GitHub page.
 
 ------------------------------------------------------------------------------
-Section 4. Examples                                            *md-to-html-ex*
+Section 5. License                                          *md-to-html-lic*
+
+This plugin is licensed under the MIT license. See the LICENSE file for more
+information.
 
 ------------------------------------------------------------------------------
-Section 5. License                                            *md-to-html-lic*
+Section 6. See Also                                         *md-to-html-see*
+
+Need something a little more powerful? Check out Pandoc. Looking for a way to
+preview your Markdown? I would recommend using markdown-preview.nvim.
 
 ------------------------------------------------------------------------------
-Section 6. See Also                                           *md-to-html-see*
+Section 7. Bugs                                            *md-to-html-bugs*
+
+If you find any bugs, please open an issue on the GitHub page.
+
+Currently, the plugin doesn't insert newlines between HTML elements when
+writing to the current buffer.
 
 ------------------------------------------------------------------------------
-Section 7. Bugs                                              *md-to-html-bugs*
+Section 8. Contributing				           *md-to-html-cont*
+
+If you would like to contribute to this plugin, please visit the GitHub page
+at `https://github.com/realprogrammersusevim/md-to-html.nvim` and open an issue
+or pull request.
 
 ------------------------------------------------------------------------------
-Section 8. Author                                            *md-to-html-auth*
+Section 9. Author                                          *md-to-html-auth*
+
+This plugin was written by `https://github.com/realprogrammersusevim` and is
+maintained by the same person.
+
+vim:tw=78:ts=8:ft=help:norl:
