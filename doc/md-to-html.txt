@@ -15,11 +15,13 @@ CONTENTS                                       *md-to-html-contents*
    1. Introduction....................|md-to-html-intro|
    2. Usage...........................|md-to-html-usage|
    3. Options.........................|md-to-html-opts|
-   4. Examples........................|md-to-html-ex|
-   5. License.........................|md-to-html-lic|
-   6. See Also........................|md-to-html-see|
-   7. Bugs............................|md-to-html-bugs|
-   8. Author..........................|md-to-html-auth|
+   4. License.........................|md-to-html-lic|
+   5. See Also........................|md-to-html-see|
+   6. Bugs............................|md-to-html-bugs|
+   7. Contributing....................|md-to-html-cont|
+   8. Deprecated......................|md-to-html-depr|
+   9. Author..........................|md-to-html-auth|
+   10. Credits........................|md-to-html-cred|
 
 ------------------------------------------------------------------------------
 Section 1. Introduction                                   *md-to-html-intro*
@@ -42,47 +44,54 @@ buffer and write the HTML to it.
 ------------------------------------------------------------------------------
 Section 3. Options                                         *md-to-html-opts*
 
-There are no options for this plugin yet. If you have any suggestions or would
-like to see something added, please open an issue--or even better a pull
-request--on the GitHub page.
+There are no options for this plugin yet but I would like to add some. If you
+have any suggestions or would like to see something added, please open an
+issue--or even better a pull request--on the GitHub page found under
+|Contributing|.
 
 ------------------------------------------------------------------------------
-Section 5. License                                          *md-to-html-lic*
+Section 4. License                                          *md-to-html-lic*
 
 This plugin is licensed under the MIT license. See the LICENSE file for more
 information.
 
 ------------------------------------------------------------------------------
-Section 6. See Also                                         *md-to-html-see*
+Section 5. See Also                                         *md-to-html-see*
 
 Need something a little more powerful? Check out Pandoc. Looking for a way to
 preview your Markdown? I would recommend using markdown-preview.nvim.
 
 ------------------------------------------------------------------------------
-Section 7. Bugs                                            *md-to-html-bugs*
+Section 6. Bugs                                            *md-to-html-bugs*
 
-If you find any bugs, please open an issue on the GitHub page.
+If you find any bugs, please open an issue or pull request on the GitHub page.
 
 Currently, the plugin doesn't insert newlines between HTML elements when
 writing to the current buffer.
 
 ------------------------------------------------------------------------------
-Section 8. Contributing				           *md-to-html-cont*
+Section 7. Contributing				           *md-to-html-cont*
 
 If you would like to contribute to this plugin, please visit the GitHub page
 at `https://github.com/realprogrammersusevim/md-to-html.nvim` and open an issue
 or pull request.
 
 ------------------------------------------------------------------------------
-Section 9. Deprecated                                       *md-to-html-dep*
+Section 8. Deprecated                                      *md-to-html-depr*
 
-Both of the commands have had their HTML made uppercase instead of lowercase.
+The commands have changed from `:MarkdownToHtml` and
+`:NewMarkdownToHtml` to `:MarkdownToHTML` and `:NewMarkdownToHTML`.
 I'll get around out how to printing deprecation warnings in Lua soon.
 
 ------------------------------------------------------------------------------
 Section 9. Author                                          *md-to-html-auth*
 
-This plugin was written by `https://github.com/realprogrammersusevim` and is
-maintained by the same person.
+This plugin was written and is maintained by Jonathan Milligan.
+I can be found at `https://github.com/realprogrammersusevim`
+
+------------------------------------------------------------------------------
+Section 10. Credits                                        *md-to-html-cred*
+
+Look at the CREDITS.md file for a list of credits (of which there are many).
 
 vim:tw=78:ts=8:ft=help:norl:
