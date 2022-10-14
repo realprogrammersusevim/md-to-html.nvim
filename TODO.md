@@ -6,7 +6,3 @@
   - [ ] Open file in browser once converted
 - [ ] Write some great documentation so users can learn about my plugin with `:help`
 - [ ] Write some tests (because apparently those are important)
-- [ ] Support more Markdown styling
-  - [ ] Sub points
-  - [ ] Tables
-  - [ ] Styled GitHub code blocks
