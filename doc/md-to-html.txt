@@ -74,6 +74,12 @@ at `https://github.com/realprogrammersusevim/md-to-html.nvim` and open an issue
 or pull request.
 
 ------------------------------------------------------------------------------
+Section 9. Deprecated                                       *md-to-html-dep*
+
+Both of the commands have had their HTML made uppercase instead of lowercase.
+I'll get around out how to printing deprecation warnings in Lua soon.
+
+------------------------------------------------------------------------------
 Section 9. Author                                          *md-to-html-auth*
 
 This plugin was written by `https://github.com/realprogrammersusevim` and is

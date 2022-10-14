@@ -10,9 +10,13 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 " Define the command to convert markdown to html in a new file
-command! NewMarkdownToHtml lua require'md-to-html'.new_md_to_html()
+command! NewMarkdownToHTML lua require'md-to-html'.new_md_to_html()
 
 " Define the command to convert markdown to html in the current file
+command! MarkdownToHTML lua require'md-to-html'.md_to_html()
+
+" DEPRECATED: The two commands below are deprecated (bad naming style)
+command! NewMarkdownToHtml lua require'md-to-html'.new_md_to_html()
 command! MarkdownToHtml lua require'md-to-html'.md_to_html()
 
 " Restore user options
