@@ -8,7 +8,7 @@
 This is a very small and lightweight NeoVim plugin to convert a Markdown document into simple HTML. <!--This is not meant to be used as a Markdown previewer (I would suggest [markdown-preview.nvim](https://github.com/iamcco/markdown-preview.nvim) for that) but as a way to export Markdown into text with HTML tags. -->It supports the basic Markdown outlined by John Gruber.
 
 
-![Screen recording of me using the plugin](https://user-images.githubusercontent.com/93488695/190666214-3f16a123-5bb5-4103-9130-428b25f3eade.mov)
+https://user-images.githubusercontent.com/93488695/190666214-3f16a123-5bb5-4103-9130-428b25f3eade.mov
 
 
 ## Requirements
