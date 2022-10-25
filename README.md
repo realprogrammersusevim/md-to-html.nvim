@@ -22,7 +22,7 @@ Remember how I said that it was pure Lua? I wasn't kidding you. There are absolu
 **Vim-Plug:**
 
 ```vim
-Plug 'realprogrammersusevim/md-to-html.nvim', { 'on': 'MarkdownToHtml' }
+Plug 'realprogrammersusevim/md-to-html.nvim', { 'on': 'MarkdownToHTML', 'NewMarkdownToHTML' }
 ```
 
 And then run `PlugInstall`
@@ -32,7 +32,7 @@ And then run `PlugInstall`
 ```lua
 use {
     "realprogrammersusevim/md-to-html.nvim",
-    cmd = MarkdownToHtml
+    cmd = "MarkdownToHTML", "NewMarkdownToHTML"
   }
 ```
 
