@@ -18,7 +18,15 @@ function md_to_html.new_md_to_html()
     return
   end
 
-  html_file:write(markdown(markdown_content))
+  local html_content = markdown(markdown_content)
+  local sanitized_html = ''
+  for line in html_content:gmatch('[^\r\n]+') do
+    if line ~= '' then
+      sanitized_html = sanitized_html .. line .. '\n'
+    end
+  end
+
+  html_file:write(sanitized_html)
   html_file:close()
 end
 
