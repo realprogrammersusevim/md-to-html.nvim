@@ -16,10 +16,10 @@ NeoVim >= 0.5
 
 ## Installation
 
-Remember when I said that it's pure Lua? I wasn't kidding you. There are
-absolutely no dependencies like Pandoc to download and set up. That means you
-can install this plugin like you would any other plugin. Here are examples for
-the two most common plugin managers.
+Everything is coded in pure Lua. There are absolutely no heavy dependencies like
+Pandoc to download and set up. That means you can install this plugin like you
+would any other plugin. Here are examples for the two most common plugin
+managers.
 
 **Vim-Plug:**
 
@@ -27,18 +27,23 @@ the two most common plugin managers.
 Plug 'realprogrammersusevim/md-to-html.nvim', { 'on': 'MarkdownToHTML', 'NewMarkdownToHTML' }
 ```
 
-And then run `PlugInstall`
-
 **Packer:**
 
 ```lua
 use {
-    "realprogrammersusevim/md-to-html.nvim",
-    cmd = "MarkdownToHTML", "NewMarkdownToHTML"
+    'realprogrammersusevim/md-to-html.nvim',
+    cmd = { 'MarkdownToHTML', 'NewMarkdownToHTML' },
   }
 ```
 
-After adding that to your config run `PackerInstall`
+**Lazy.nvim**
+
+```lua
+{
+  'realprogrammersusevim/md-to-html.nvim',
+  cmd = { 'MarkdownToHTML', 'NewMarkdownToHTML' },
+}
+```
 
 ## Usage
 
